@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+          'morabba_light': 'morabba_light',
+          'morabba_medium': 'morabba_medium',
+          'morabba_bold': 'morabba_bold',
+          'dana_light': 'morabba_light',
+        }
+    },
   },
   plugins: [],
 }
