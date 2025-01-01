@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
+    "animate.css": "^4.1.1",
     "antd": "^5.22.7",
+    "aos": "^3.0.0-beta.6",
+    "keen-slider": "^6.8.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.2.0",
     "react-router": "^7.1.1",
-    "animate.css": "^4.1.1",
-    "aos": "^3.0.0-beta.6",
-    "keen-slider": "^6.8.6",
     "react-toastify": "^10.0.5"
   },
   "devDependencies": {
