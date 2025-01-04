@@ -28,10 +28,14 @@ export default {
         txt_color_secondry_l:"#9C9C9C",
         txt_color_footer_l:"#818181",
 
+        primary_lighteen:"#FFFFFF",
+        primary_darken:"#1E2026",
+
+
         },
         boxShadow: {
           primary_shadow:"0px 0px 17px 0px #0000000F",
-        }
+        },
     },
   },
   darkMode:'class',

@@ -10,10 +10,9 @@ function App() {
     loadTheme()
   }, []);
   return (
-    <>
-      <button onClick={theme}>click theme</button>
-      <div data-aos="fade-up"><button className='text-red-600 dark:text-blue-900'>click to dark</button></div>
-    </>
+    <div>
+      <button onClick={theme}>click</button>
+    </div>
   )
 }
 
