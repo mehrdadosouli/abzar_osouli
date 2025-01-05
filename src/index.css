@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   @font-face {
     font-family: "morabba_light";
@@ -25,12 +24,26 @@
     font-weight: 800;
     font-display: swap;
     src: url("./styles/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
-  };
+  }
   @font-face {
     font-family: "dana_light";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("./styles/fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
-  };
+    src: url("./styles/fonts/Dana/woff2/DanaFaNum-Regular.woff2")
+      format("woff2");
+  }
+
+  *, *::after, *::before {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+  }  
+
+  body, #root {  
+    @apply w-full bg-primary_lighteen dark:bg-primary_darken;  
+    direction: rtl;  
+    font-family: "dana_light", "morabba_light";  
+    line-height: normal;
+  }
 }

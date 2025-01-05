@@ -21,7 +21,6 @@ export default {
         bg_box_lighten_primary:"#DEDEDE",
         bg_box_lighten_secondry:"#F9F9F9",
         bg_box_darken_primary:"#E1E1E1",
-        bg_btn_arrow_lighten_primary: "#FF502347",
         bg_offer_darken:"#EFEFEF",
         // text
         txt_color_primary_l:"#212121",
@@ -30,7 +29,6 @@ export default {
 
         primary_lighteen:"#FFFFFF",
         primary_darken:"#1E2026",
-
 
         },
         boxShadow: {

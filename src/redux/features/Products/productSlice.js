@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const initialState = {
   products: [
     {
       id: 1,
       name: "دریل چکشی رونیکس",
       model: "Ronix Rotary Drill",
-      image: URL('../../../assets/photo/abzar (1).png'),
+      image: '../../../assets/photo/abzar (1).png',
       short_description: "یک دریل چکشی قدرتمند با کارایی بالا.",
       long_description:
         "این دریل چکشی رونیکس با توان 800 وات و سرعت متغیر، مناسب برای تمامی کارهای خانگی و صنعتی است.",
@@ -16,7 +17,7 @@ const initialState = {
       id: 2,
       name: "مینی فرز ادون",
       model: "Eden Mini Grinder",
-      image: "https://example.com/images/eden-mini-grinder.jpg",
+      image: '../../../assets/photo/abzar (1).png',
       short_description: "مینی فرز سبک و جمع و جور با کارایی عالی.",
       long_description:
         "مینی فرز ادون با توان 750 وات و طراحی ارگونومیک، گزینه مناسبی برای برش و سابیدن مواد مختلف است.",
@@ -27,7 +28,7 @@ const initialState = {
       id: 3,
       name: "اره کمانی",
       model: "Bow Saw",
-      image: "https://example.com/images/bow-saw.jpg",
+      image: '../../../assets/photo/abzar (1).png',
       short_description: "اره کمانی با تیغه تیز و مقاوم.",
       long_description:
         "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
@@ -38,7 +39,7 @@ const initialState = {
       id: 4,
       name: "سنگ فرز",
       model: "Angle Grinder",
-      image: "https://example.com/images/angle-grinder.jpg",
+      image: '../../../assets/photo/abzar (1).png',
       short_description: "سنگ فرز با قدرت بالا برای کارهای صنعتی.",
       long_description:
         "سنگ فرز با توان 1200 وات و قابلیت تنظیم سرعت، مناسب برای برش و سابیدن فلزات است.",
@@ -49,7 +50,7 @@ const initialState = {
       id: 5,
       name: "پیکور",
       model: "Jackhammer",
-      image: "https://example.com/images/jackhammer.jpg",
+      image: '../../../assets/photo/abzar (1).png',
       short_description: "پیکور برقی برای کارهای سنگین.",
       long_description:
         "پیکور برقی با توان 1500 وات و طراحی مستحکم، مناسب برای تخریب بتن و سنگ.",
@@ -60,7 +61,7 @@ const initialState = {
       id: 6,
       name: "کارواش اینتیمکث",
       model: "Intimax Car Wash",
-      image: "https://example.com/images/intimax-car-wash.jpg",
+      image: '../../../assets/photo/abzar (1).png',
       short_description: "کارواش فشار قوی با قابلیت تنظیم.",
       long_description:
         "کارواش اینتیمکث با فشار 140 بار و لوازم جانبی مختلف، مناسب برای شستشوی خودرو.",
@@ -71,7 +72,7 @@ const initialState = {
       id: 7,
       name: "موتور برق",
       model: "Electric Generator",
-      image: "https://example.com/images/electric-generator.jpg",
+      image: '../../../assets/photo/abzar (1).png',
       short_description: "موتور برق با قدرت بالا.",
       long_description:
         "موتور برق با توان 2000 وات و سیستم استارت آسان، مناسب برای کاربردهای خانگی و صنعتی.",

@@ -1,8 +1,9 @@
 import AOS from 'aos';
 import { useEffect } from 'react';
-import { theme, loadTheme } from './utils/theme';
-import { Routes } from 'react-router';
+import { loadTheme } from './utils/theme';
 import Routers from './routes/Route.jsx';
+import HeaderTop from './components/header/HeaderTop.jsx';
+import HeaderMain from './components/header/HeaderMain.jsx';
 
 function App() {
   useEffect(() => {
@@ -13,6 +14,8 @@ function App() {
   }, []);
   return (
     <div>
+      <HeaderTop />
+      <HeaderMain />
         <Routers />
     </div>
   )
