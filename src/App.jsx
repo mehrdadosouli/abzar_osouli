@@ -1,6 +1,8 @@
 import AOS from 'aos';
 import { useEffect } from 'react';
 import { theme, loadTheme } from './utils/theme';
+import { Routes } from 'react-router';
+import Routers from './routes/Route.jsx';
 
 function App() {
   useEffect(() => {
@@ -11,7 +13,7 @@ function App() {
   }, []);
   return (
     <div>
-      <button onClick={theme}>click</button>
+        <Routers />
     </div>
   )
 }
