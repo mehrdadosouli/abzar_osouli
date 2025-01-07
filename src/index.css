@@ -39,6 +39,7 @@
     margin: 0;  
     padding: 0;  
   }  
+  
 
   body, #root {  
     @apply w-full bg-primary_lighteen dark:bg-primary_darken;  
@@ -46,4 +47,7 @@
     font-family: "dana_light", "morabba_light";  
     line-height: normal;
   }
+}
+.ant-menu-submenu-title{
+  padding-right: 0;
 }
