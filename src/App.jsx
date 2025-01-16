@@ -6,7 +6,7 @@ import HeaderTop from './components/header/HeaderTop.jsx';
 import HeaderMain from './components/header/HeaderMain.jsx';
 
 function App() {
-  const [getTheme,setGetTheme]=useState(localStorage.getItem('theme'))
+  const [getTheme, setGetTheme] = useState(localStorage.getItem('theme'))
   useEffect(() => {
     AOS.init();
   }, []);
@@ -16,10 +16,10 @@ function App() {
 
   return (
     <div>
-      <button onClick={()=>{theme();setGetTheme(localStorage.getItem('theme'))}}>click</button>
+      <button onClick={() => { theme(); setGetTheme(localStorage.getItem('theme')) }}>click</button>
       <HeaderTop />
       <HeaderMain />
-        <Routers />
+      <Routers />
     </div>
   )
 }
