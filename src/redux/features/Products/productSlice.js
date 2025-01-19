@@ -88,7 +88,21 @@ const initialState = {
         categoryIcon:"abzar (25).png",
         subcategory: "اره کمانی",
         link:"/اره کمانی",
-      },],
+      },{
+        id: 3,
+        name: " 3 اره کمانی",
+        model: "Bow Saw",
+        image: "abzar (1).png",
+        short_description: "اره کمانی با تیغه تیز و مقاوم.",
+        long_description:
+          "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
+        price: 700000,
+        quantity: 0,
+        category: "اره کمانی",
+        categoryIcon:"abzar (25).png",
+        subcategory: "اره کمانی",
+        link:"/اره کمانی",
+      }],
       link:"/سنگ فرز",
     },
     {

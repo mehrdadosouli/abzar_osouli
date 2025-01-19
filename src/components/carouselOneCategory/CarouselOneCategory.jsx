@@ -1,80 +1,98 @@
-import React from "react"
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
-import "./carouselOneCategory.css"
-import img1 from '../../assets/photo/'
+import React, { useState } from "react";
+import "keen-slider/keen-slider.min.css";
+import "./carouselOneCategory.css";
+import { useKeenSlider } from "keen-slider/react";
+
 export default function CarouselOneCategory({ selectOnecategory }) {
-  const names = selectOnecategory?.relatedProducts
-  console.log(names);
-
-  // names.length=selectOnecategory?.relatedProducts?.length
-  const slidesPerView = 1
-  const numberSlides = slidesPerView + 1
-  const [slidesDetails, setSlidesDetails] = React.useState(null)
-  const [sliderRefImageProduct, instanceRefImageProduct] = useKeenSlider({
-    renderMode: "performance",
-    mode: "free-snap",
-    rtl: true,
-    drag: true,
+  const names = selectOnecategory?.relatedProducts;
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [loaded, setLoaded] = useState(false)
+  const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
-
-    breakpoints: {
-      "(min-width: 425px)": {
-        loop: true,
-        slides: { perView: 1, spacing: 10 },
-      },
-      // "(min-width: 640px)": {
-      //   loop: true,
-      //   slides: { perView: 4.2, spacing: 10 },
-      // },
-      // "(min-width: 768px)": {
-      //   loop: true,
-      //   slides: { perView: 6.2, spacing: 10 },
-      // },
-      // "(min-width: 1024px)": {
-      //   loop: true,
-      //   slides: { perView: 2.5, spacing: 10 },
-      // },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel)
     },
-  });
-  // const [sliderRef] = useKeenSlider({
-  //   initial: 0,
-  //   loop: {
-  //     min: 0,
-  //     max: names?.length - 1,
-  //   },
-  //   range: {
-  //     align: true,
-  //     min: 0,
-  //     max: names?.length - 1,
-  //   },
-  //   mode: "free-snap",
-  //   detailsChanged: (s) => {
-  //     setSlidesDetails(s.track.details.slides)
-  //   },
-  //   slides: {
-  //     number: 2,
-  //     perView: 1,
-  //   },
-  // })
+    created() {
+      setLoaded(true)
+    },
+  })
+
 
   return (
-    <div ref={sliderRefImageProduct} className="keen-slider">
-      {names?.map((item, index) => (
-        <section key={index} className="keen-slider__slide">
-          <img
-            src={item.image ? `../../assets/photo/${item.categoryIcon}` : 'fallback-image-url.jpg'}
-            alt={item.image}
-            className="bg-bgLightColor dark:bg-bgDarkColor/50 rounded-xl object-contain"
-          />
-        </section>
-      ))}
+    <>
+      <div className="navigation-wrapper">
+      <div ref={sliderRef} className="keen-slider">
+        {/* {names?.length &&
+          names.map((item, index) => (
+            <section key={index} className="keen-slider__slide">
+              <span>{item.name}</span>
+              <img src={`/photo/${item.image}`} alt={item.name} />
+            </section>
+          ))
+        } */}
+        <div className="keen-slider__slide number-slide1">1</div>
+        </div>
 
-      {!names?.length === 0 && (
-        <h2 className="w-full text-slate-800 text-base text-center font-bold capitalize">
-          products is not found!
-        </h2>
-      )}
-    </div>
-  )
+          {loaded && instanceRef.current && (
+            <>
+              <Arrow
+                left
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.prev()
+                }
+                disabled={currentSlide === 0}
+              />
+
+              <Arrow
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.next()
+                }
+                disabled={
+                  currentSlide ===
+                  instanceRef.current.track.details.slides.length - 1
+                }
+              />
+            </>
+          )}
+        </div>
+        {loaded && instanceRef.current && (
+          <div className="dots">
+            {[
+              ...Array(instanceRef.current.track.details.slides.length).keys(),
+            ].map((idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    instanceRef.current?.moveToIdx(idx)
+                  }}
+                  className={"dot" + (currentSlide === idx ? " active" : "")}
+                ></button>
+              )
+            })}
+          </div>
+        )}
+      </>
+      )
+}
+
+
+      function Arrow(props) {
+  const disabled = props.disabled ? " arrow--disabled" : ""
+      return (
+      <svg
+        onClick={props.onClick}
+        className={`arrow ${props.left ? "arrow--left" : "arrow--right"
+          } ${disabled}`}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        {props.left && (
+          <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+        )}
+        {!props.left && (
+          <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+        )}
+      </svg>
+      )
 }
