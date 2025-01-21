@@ -11,7 +11,8 @@ export default {
       },
       colors: {
         primaryColor: "#FF5023", // orange dark
-        secondaryColor: "#FF9A2E", // orange light
+        secondaryColor: "#FF50231F", // orange light
+        // secondaryColor: "#FF9A2E", // orange light
         thirdColor: "#FF5D42", // red
         // background
         bg_button_light: "#FFFFFF",
@@ -26,6 +27,7 @@ export default {
 
         primary_lighteen: "#FFFFFF",
         primary_darken: "#1E2026",
+        primary_glass: "#FFFFFF54",
       },
       boxShadow: {
         primary_shadow: "0px 0px 17px 0px #0000000F",

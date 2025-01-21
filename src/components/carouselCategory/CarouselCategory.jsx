@@ -1,7 +1,7 @@
 
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import "../carousel/carousel.css"
+import "../carousel/carousel.module.css"
 import CategoryItems from '../category/CategoryItems'
 
 

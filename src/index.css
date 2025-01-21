@@ -43,8 +43,8 @@
     box-sizing: border-box;  
     margin: 0;  
     padding: 0;  
+    color: black;
   }  
-  
 
   body, #root {  
     @apply w-full bg-primary_lighteen dark:bg-primary_darken;  
