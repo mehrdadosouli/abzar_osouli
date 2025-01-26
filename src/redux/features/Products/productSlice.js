@@ -499,6 +499,71 @@ const initialState = {
       link: "/موتور برق",
     },
   ],
+  amazingDiscount: [
+    {
+      id: 1,
+      name: "دریل چکشی رونیکس",
+      model: "Ronix Rotary Drill",
+      image: "abzar (3).png",
+      short_description: "یک دریل چکشی قدرتمند با کارایی بالا.",
+      long_description:
+        "این دریل چکشی رونیکس با توان 800 وات و سرعت متغیر، مناسب برای تمامی کارهای خانگی و صنعتی است.",
+      price: 2750000,
+      time: 2 * 24 * 60 * 60,
+      quantity: 0,
+      category: "دریل",
+      categoryIcon: "abzar(23).png",
+      subcategory: "دریل",
+      relatedProducts: [
+        {
+          id: 1,
+          name: " 1 اره کمانی",
+          model: "Bow Saw",
+          image: "abzar (1).png",
+          short_description: "اره کمانی با تیغه تیز و مقاوم.",
+          long_description:
+            "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
+          price: 700000,
+          quantity: 0,
+          category: "اره کمانی",
+          categoryIcon: "abzar (25).png",
+          subcategory: "اره کمانی",
+          link: "/اره کمانی",
+        },
+        {
+          id: 2,
+          name: " 2 اره کمانی",
+          model: "Bow Saw",
+          image: "abzar (1).png",
+          short_description: "اره کمانی با تیغه تیز و مقاوم.",
+          long_description:
+            "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
+          price: 700000,
+          quantity: 0,
+          category: "اره کمانی",
+          categoryIcon: "abzar (25).png",
+          subcategory: "اره کمانی",
+          link: "/اره کمانی",
+        },
+        {
+          id: 3,
+          name: " 3 اره کمانی",
+          model: "Bow Saw",
+          image: "abzar (1).png",
+          short_description: "اره کمانی با تیغه تیز و مقاوم.",
+          long_description:
+            "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
+          price: 700000,
+          quantity: 0,
+          category: "اره کمانی",
+          categoryIcon: "abzar (25).png",
+          subcategory: "اره کمانی",
+          link: "/اره کمانی",
+        },
+      ],
+      link: "/دریل",
+    },
+  ],
   sumCountity: 0,
 };
 
@@ -524,3 +589,5 @@ export const { increment, decrement, incrementByAmount } = productSlice.actions;
 export default productSlice.reducer;
 
 export const selectCategory = (store) => store.products.products;
+export const selectAmazingDiscount = (store) => store.products.amazingDiscount;
+

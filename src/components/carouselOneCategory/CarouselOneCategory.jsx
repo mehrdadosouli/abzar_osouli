@@ -11,7 +11,7 @@ export default function CarouselOneCategory({ selectOnecategory }) {
     loop: true,
     breakpoints: {
       "(max-width: 400px)": {
-        slides: { perView: 1 },
+        slides: { perView: 1, spacing: 15 },
       },
       "(min-width: 700px)": {
         slides: { perView: 2, spacing: 15 },
@@ -36,17 +36,17 @@ export default function CarouselOneCategory({ selectOnecategory }) {
         <div ref={sliderRef} className="keen-slider flex">
           {names?.length &&
             names.map((item, index) => (
-              <div key={item.id} className="keen-slider__slide flex flex-col p-5 gap-5 bg-primaryColor rounded-2xl [&>*]:text-white">
-                <div className="w-full h-56 flex justify-center rounded-2xl p-10 bg-white">
+              <div key={item.id} className="keen-slider__slide w-full flex flex-col p-5 gap-5 bg-primaryColor rounded-2xl">
+                <div className="w-full flex justify-center rounded-2xl p-10 bg-white">
                   <img className=" bg-white object-contain" src={`/photo/${item.image}`} alt={item.name} />
                 </div>
-                <span>{item?.name}</span>
-                <span className="">{item?.model}</span>
+                <span className="text-white">{item?.name}</span>
+                <span className="text-[#FFFFFFB8]">{item?.model}</span>
                 <div className="flex justify-between border-b-2 border-white pb-5 [&>*]:text-white dark:[&>*]:text-black">
                   <span>قیمت :</span>
                   <span>{item.price}</span>
                 </div>
-                <button className="bg-primary_glass rounded-lg">افزودن به سبد خرید</button>
+                <button className="bg-primary_glass rounded-lg text-white">افزودن به سبد خرید</button>
               </div>
             ))
           }
