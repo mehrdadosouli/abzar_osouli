@@ -36,13 +36,13 @@ export default function CarouselOneCategory({ selectOnecategory }) {
         <div ref={sliderRef} className="keen-slider flex">
           {names?.length &&
             names.map((item, index) => (
-              <div key={item.id} className="keen-slider__slide w-full flex flex-col p-5 gap-5 bg-primaryColor rounded-2xl">
-                <div className="w-full flex justify-center rounded-2xl p-10 bg-white">
-                  <img className=" bg-white object-contain" src={`/photo/${item.image}`} alt={item.name} />
+              <div key={item.id} className="keen-slider__slide w-full flex flex-col p-4 gap-2 bg-primaryColor rounded-2xl">
+                <div className="w-full flex justify-center rounded-2xl p-5 bg-white">
+                  <img className="w-20 bg-white object-cover" src={`/photo/${item.image}`} alt={item.name} />
                 </div>
                 <span className="text-white">{item?.name}</span>
                 <span className="text-[#FFFFFFB8]">{item?.model}</span>
-                <div className="flex justify-between border-b-2 border-white pb-5 [&>*]:text-white dark:[&>*]:text-black">
+                <div className="flex justify-between border-b-2 border-white pb-2 [&>*]:text-white dark:[&>*]:text-black">
                   <span>قیمت :</span>
                   <span>{item.price}</span>
                 </div>
