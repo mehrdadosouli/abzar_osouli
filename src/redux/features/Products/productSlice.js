@@ -517,7 +517,7 @@ const initialState = {
       link: "/دریل",
     },
     {
-      id: 1,
+      id: 2,
       name: "دریل چکشی رونیکس",
       model: "Ronix Rotary Drill",
       image: "abzar (17).png",
@@ -529,6 +529,39 @@ const initialState = {
       quantity: 0,
       category: "دریل",
       categoryIcon: "abzar(17).png",
+      subcategory: "دریل",
+      link: "/دریل",
+    },
+  ],
+  sliderHomePage: [
+    {
+      id: 1,
+      name: "اپتومتر صنعتی رونیکس",
+      model: "Ronix Rotary Drill",
+      image: "abzar (30).png",
+      short_description: "یک اپتومتر دقیق با کارایی بالا.",
+      long_description:
+        "این دریل چکشی رونیکس با توان 800 وات و سرعت متغیر، مناسب برای تمامی کارهای خانگی و صنعتی است.",
+      price: 2750000,
+      quantity: 0,
+      category: "دریل",
+      categoryIcon: "abzar(28).png",
+      subcategory: "دریل",
+      link: "/دریل",
+    }
+    ,
+    {
+      id: 2,
+      name: "دریل چکشی رونیکس",
+      model: "Ronix Rotary Drill",
+      image: "abzar (3).png",
+      short_description: "یک دریل چکشی قدرتمند با کارایی بالا.",
+      long_description:
+        "این دریل چکشی رونیکس با توان 800 وات و سرعت متغیر، مناسب برای تمامی کارهای خانگی و صنعتی است.",
+      price: 2750000,
+      quantity: 0,
+      category: "دریل",
+      categoryIcon: "abzar(3).png",
       subcategory: "دریل",
       link: "/دریل",
     },
@@ -559,4 +592,5 @@ export default productSlice.reducer;
 
 export const selectCategory = (store) => store.products.products;
 export const selectAmazingDiscount = (store) => store.products.amazingDiscount;
+export const selectSliderHomePage = (store) => store.products.sliderHomePage;
 
