@@ -4,7 +4,7 @@ import Search from "../search/Search";
 export default function HeaderTop() {
   return (
     <div className="grid grid-cols-4 items-center px-24 pt-10 gap-5">
-      <h1 className="col-span-1 text-xl leading-6 text-primaryColor font-medium">MEHRDAD ABZAR</h1>
+      <h1 className="col-span-1 text-xl mt-2 text-primaryColor dark:text-white font-medium">MEHRDAD ABZAR</h1>
       <Search />
       <div className="flex justify-end items-center gap-2 col-span-1">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 dark:text-white">
