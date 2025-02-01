@@ -34,7 +34,7 @@ export default () => {
     }, [currentSlide]);
     return (
         <>
-            <div className="navigation-wrapper px-20">
+            <div className="navigation-wrapper px-20 my-10">
                 <div ref={sliderRef} className="keen-slider">
                     {
                         selectionSlider.map(item => <div className="relative keen-slider__slide number-slide1" key={item.id}>

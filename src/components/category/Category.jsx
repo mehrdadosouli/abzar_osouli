@@ -18,11 +18,11 @@ export default function Category() {
     setCategory(cat)
   }
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-20">
       <div className="flex justify-between items-center">
         <CarouselCategory selectCategoryItems={selectCategoryItems} changeHandlerCategory={changeHandlerCategory} />
       </div>
-      <div className="flex gap-5 my-20 px-24">
+      <div className="flex gap-5 my-10 px-24">
         <div className="relative w-1/4 bg-no-repeat bg-cover rounded-xl backdrop-brightness-0" style={{ backgroundImage: `url("photo/abzar (4).png")` }}>
           <h3 className="absolute right-0 -top-12 text-primaryColor font-bold text-3xl">تخفیف شگفت انگیز</h3>
           <img className="size-3/4 object-contain object-left-bottom mt-28 mx-auto" src={`photo/${selectDiscount[0].image}`} alt="" />
