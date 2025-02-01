@@ -1,11 +1,10 @@
 import { Link } from 'react-router'
-import CarouselOneCategory from '../carouselOneCategory/CarouselOneCategory'
 import { useSelector } from 'react-redux'
 import { selectCategory } from '../../redux/features/Products/productSlice'
+import BannerBestSellingProducts from '../bannerBestSellingProducts/BannerBestSellingProducts'
 
 function BestSellingProducts() {
     const selectCategoryItems = useSelector(selectCategory)
-    console.log(selectCategoryItems);
     
   return (
     <div className='flex flex-col gap-10 px-24'>
@@ -13,7 +12,7 @@ function BestSellingProducts() {
             <Link to="/">پرفروش ترین محصولات</Link >
             <span>مشاهده همه</span>
         </div>
-        <CarouselOneCategory bg='light' arrow={false} slides='4' selectOnecategory={selectCategoryItems} />
+        <BannerBestSellingProducts selectCategoryItems={selectCategoryItems} />
     </div>
   )
 }
