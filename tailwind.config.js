@@ -15,11 +15,11 @@ export default {
         // secondaryColor: "#FF9A2E", // orange light
         thirdColor: "#FF5D42", // red
         // background
-        bg_button_light: "#FFFFFF",
-        bg_box_lighten_primary: "#DEDEDE",
-        bg_box_lighten_secondry: "#F9F9F9",
-        bg_box_darken_primary: "#E1E1E1",
-        bg_offer_darken: "#EFEFEF",
+        button_light: "#FFFFFF",
+        box_lighten_primary: "#DEDEDE",
+        box_lighten_secondry: "#F9F9F9",
+        box_darken_primary: "#E1E1E1",
+        offer_darken: "#EFEFEF",
         // text
         txt_color_primary_l: "#212121",
         txt_color_secondry_l: "#9C9C9C",

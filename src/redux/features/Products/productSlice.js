@@ -6,7 +6,7 @@ const initialState = {
       id: 1,
       name: "دریل چکشی رونیکس",
       model: "Ronix Rotary Drill",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (1).png",
       short_description: "یک دریل چکشی قدرتمند با کارایی بالا.",
       long_description:
         "این دریل چکشی رونیکس با توان 800 وات و سرعت متغیر، مناسب برای تمامی کارهای خانگی و صنعتی است.",
@@ -68,7 +68,7 @@ const initialState = {
       id: 2,
       name: "مینی فرز ادون",
       model: "Eden Mini Grinder",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (2).png",
       short_description: "مینی فرز سبک و جمع و جور با کارایی عالی.",
       long_description:
         "مینی فرز ادون با توان 750 وات و طراحی ارگونومیک، گزینه مناسبی برای برش و سابیدن مواد مختلف است.",
@@ -107,7 +107,8 @@ const initialState = {
           categoryIcon: "abzar (18).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
-        },
+        }
+        ,
         {
           id: 3,
           name: "3 مینی فرز ادون",
@@ -130,7 +131,7 @@ const initialState = {
       id: 3,
       name: "اره کمانی",
       model: "Bow Saw",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (3).png",
       short_description: "اره کمانی با تیغه تیز و مقاوم.",
       long_description:
         "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
@@ -192,7 +193,7 @@ const initialState = {
       id: 4,
       name: "سنگ فرز",
       model: "Angle Grinder",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (11).png",
       short_description: "سنگ فرز با قدرت بالا برای کارهای صنعتی.",
       long_description:
         "سنگ فرز با توان 1200 وات و قابلیت تنظیم سرعت، مناسب برای برش و سابیدن فلزات است.",
@@ -254,7 +255,7 @@ const initialState = {
       id: 5,
       name: "پیکور",
       model: "Jackhammer",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (13).png",
       short_description: "پیکور برقی برای کارهای سنگین.",
       long_description:
         "پیکور برقی با توان 1500 وات و طراحی مستحکم، مناسب برای تخریب بتن و سنگ.",
@@ -316,7 +317,7 @@ const initialState = {
       id: 6,
       name: "اره گرد بر",
       model: "Electric Generator",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (12).png",
       short_description: "موتور برق با قدرت بالا.",
       long_description:
         "موتور برق با توان 2000 وات و سیستم استارت آسان، مناسب برای کاربردهای خانگی و صنعتی.",
@@ -378,7 +379,7 @@ const initialState = {
       id: 7,
       name: "کارواش اینتیمکث",
       model: "Intimax Car Wash",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (7).png",
       short_description: "کارواش فشار قوی با قابلیت تنظیم.",
       long_description:
         "کارواش اینتیمکث با فشار 140 بار و لوازم جانبی مختلف، مناسب برای شستشوی خودرو.",
@@ -440,7 +441,7 @@ const initialState = {
       id: 8,
       name: "موتور برق",
       model: "Electric Generator",
-      image: "../../../assets/photo/abzar (1).png",
+      image: "abzar (8).png",
       short_description: "موتور برق با قدرت بالا.",
       long_description:
         "موتور برق با توان 2000 وات و سیستم استارت آسان، مناسب برای کاربردهای خانگی و صنعتی.",
@@ -538,7 +539,7 @@ const initialState = {
       id: 1,
       name: "اپتومتر صنعتی رونیکس",
       model: "Ronix Rotary Drill",
-      image: "abzar (30).png",
+      image: "abzar (9).png",
       short_description: "یک اپتومتر دقیق با کارایی بالا.",
       long_description:
         "این دریل چکشی رونیکس با توان 800 وات و سرعت متغیر، مناسب برای تمامی کارهای خانگی و صنعتی است.",
@@ -554,7 +555,7 @@ const initialState = {
       id: 2,
       name: "دریل چکشی رونیکس",
       model: "Ronix Rotary Drill",
-      image: "abzar (3).png",
+      image: "abzar (10).png",
       short_description: "یک دریل چکشی قدرتمند با کارایی بالا.",
       long_description:
         "این دریل چکشی رونیکس با توان 800 وات و سرعت متغیر، مناسب برای تمامی کارهای خانگی و صنعتی است.",
