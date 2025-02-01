@@ -3,6 +3,7 @@ import CarouselOneCategory from '../carouselOneCategory/CarouselOneCategory'
 import { useSelector } from 'react-redux'
 import { selectCategory } from '../../redux/features/Products/productSlice'
 import { Link } from 'react-router'
+import BannerNewProducts from '../bannerNewProducts/BannerNewProducts'
 function NewProducts() {
     const selectCategoryItems = useSelector(selectCategory)
     console.log(selectCategoryItems);
@@ -14,6 +15,7 @@ function NewProducts() {
             <span>مشاهده همه</span>
         </div>
         <CarouselOneCategory bg='light' arrow={false} slides='4' selectOnecategory={selectCategoryItems} />
+        <BannerNewProducts />
     </div>
   )
 }
