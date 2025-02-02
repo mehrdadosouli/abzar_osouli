@@ -46,8 +46,8 @@ export default () => {
                             </div>
                             <div className="w-1/2 h-[90%] bg-black dark:bg-white rounded-2xl border-solid border-gray-100 border-8 ">
                                 <div className="w-fit h-full mx-auto my-auto flex flex-col justify-center gap-5">
-                                    <span className="w-fit text-white dark:text-black">{item.name}</span>
-                                    <span className="w-fit text-white dark:text-black">{item.short_description}</span>
+                                    <span className="w-fit text-white dark:text-black text-3xl">{item.name}</span>
+                                    <span className="w-fit text-white dark:text-black text-3xl">{item.short_description}</span>
                                 </div>
                             </div>
                         </div>)
