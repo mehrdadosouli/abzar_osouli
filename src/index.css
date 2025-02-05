@@ -55,3 +55,38 @@
 .ant-menu-submenu-title{
   padding-right: 0;
 }
+
+/* Custom scrollbar styles */  
+.scrollbar-thumb {  
+  @apply bg-gray-500 rounded; /* Customize the draggable part of the scrollbar */  
+}  
+
+.scrollbar-thumb:hover {  
+  @apply bg-gray-600; /* Change color on hover */  
+}  
+
+.scrollbar-track {  
+  @apply bg-gray-200; /* Customize track */  
+}  
+
+/* Apply scrollbar in a component */  
+.scrollbar {  
+  scrollbar-width: thin; /* For Firefox */  
+}  
+
+.scrollbar::-webkit-scrollbar {  
+  width: 8px; /* Width of the scrollbar */  
+}  
+
+.scrollbar::-webkit-scrollbar-thumb {  
+  @apply bg-gray-500; /* Custom scrollbar thumb */  
+  border-radius: 4px;  
+}  
+
+.scrollbar::-webkit-scrollbar-thumb:hover {  
+  @apply bg-gray-600;  
+}  
+
+.scrollbar::-webkit-scrollbar-track {  
+  @apply bg-gray-200; /* Custom scrollbar track */  
+} 

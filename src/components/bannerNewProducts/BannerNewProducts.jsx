@@ -7,10 +7,9 @@ import { Link } from "react-router"
 function BannerNewProducts() {
     const selectCategoryItems = useSelector(selectCategory)
     return (
-        <div className="flex gap-5">
+        <div className="flex gap-5 ml-5">
             <div className="w-1/5 bg-[#FF9A2a] rounded-lg z-50">
-            <div className="w-[22vw] h-[43rem] lg:transform translate-x-10  bg-cover bg-no-repeat"  style={{ backgroundPosition: '-9vw', backgroundSize: '150%', backgroundImage: `url("photo/abzar (11).png")` }}>         
-            </div>
+                <div className="w-[22vw] h-[43rem] lg:transform translate-x-10  bg-cover bg-no-repeat" style={{ backgroundPosition: '-9vw', backgroundSize: '150%', backgroundImage: `url("photo/abzar (11).png")` }}></div>
             </div>
             <div className="w-4/5 p-10 flex flex-col gap-10 bg-[#FF9A2a] rounded-lg">
                 <CarouselOneCategory bg='light' arrow={false} slides='3' selectOnecategory={selectCategoryItems} />

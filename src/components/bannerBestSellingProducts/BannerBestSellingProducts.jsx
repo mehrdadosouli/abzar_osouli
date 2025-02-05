@@ -3,7 +3,7 @@ import CarouselOneCategory from '../carouselOneCategory/CarouselOneCategory';
 
 function BannerBestSellingProducts({ selectCategoryItems }) {  
     return (  
-        <div className='p-10 bg-primaryColor'>  
+        <div className='p-10 bg-primaryColor rounded-xl'>  
             <div className='flex flex-col md:flex-row md:h-[12rem]'>  
                 <div className='w-full md:w-1/3 flex flex-col gap-10'>  
                     <span className='text-white font-bold text-3xl'>پرفروش ترین اره برقی ها</span>  

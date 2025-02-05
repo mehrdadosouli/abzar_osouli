@@ -1,7 +1,6 @@
 
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import "../carousel/carousel.module.css"
 import CategoryItems from '../category/CategoryItems'
 
 
@@ -22,7 +21,7 @@ export default ({ selectCategoryItems , changeHandlerCategory}) => {
           <div className="size-36 shadow-[0px_0px_10px_5px_#0000000F] rounded-2xl overflow-hidden my-10" key={item.id}>
             <CategoryItems item={item} />
           </div>
-          <div>{item.category}</div>
+          <div className=" dark:text-white">{item.category}</div>
         </div>
         ))
       }
