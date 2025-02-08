@@ -17,7 +17,7 @@ const initialState = {
       subcategory: "دریل",
       relatedProducts: [
         {
-          id: 1,
+          id: 11,
           name: " 1 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -32,7 +32,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 12,
           name: " 2 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -47,7 +47,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 3,
+          id: 13,
           name: " 3 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -79,7 +79,7 @@ const initialState = {
       subcategory: "مینی فرز",
       relatedProducts: [
         {
-          id: 1,
+          id: 14,
           name: "مینی فرز ادون",
           model: "Bow Saw",
           image: "abzar (17).png",
@@ -94,7 +94,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 15,
           name: "2 مینی فرز ادون",
           model: "Bow Saw",
           image: "abzar (18).png",
@@ -110,7 +110,7 @@ const initialState = {
         }
         ,
         {
-          id: 3,
+          id: 16,
           name: "3 مینی فرز ادون",
           model: "Bow Saw",
           image: "abzar (19).png",
@@ -142,7 +142,7 @@ const initialState = {
       subcategory: "اره کمانی",
       relatedProducts: [
         {
-          id: 1,
+          id: 17,
           name: " 1 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -157,7 +157,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 18,
           name: " 2 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -172,7 +172,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 3,
+          id: 19,
           name: " 3 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -204,7 +204,7 @@ const initialState = {
       subcategory: "سنگ فرز",
       relatedProducts: [
         {
-          id: 1,
+          id: 20,
           name: " 1 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -219,7 +219,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 21,
           name: " 2 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -234,7 +234,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 3,
+          id: 22,
           name: " 3 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -266,7 +266,7 @@ const initialState = {
       subcategory: "پیکور",
       relatedProducts: [
         {
-          id: 1,
+          id: 23,
           name: " 1 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -281,7 +281,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 24,
           name: " 2 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -296,7 +296,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 3,
+          id: 25,
           name: " 3 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -328,7 +328,7 @@ const initialState = {
       subcategory: "اره گرد بر",
       relatedProducts: [
         {
-          id: 1,
+          id: 26,
           name: " 1 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -343,7 +343,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 27,
           name: " 2 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -358,7 +358,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 3,
+          id: 28,
           name: " 3 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -390,7 +390,7 @@ const initialState = {
       subcategory: "کارواش اینتیمکث",
       relatedProducts: [
         {
-          id: 1,
+          id: 29,
           name: " 1 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -405,7 +405,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 30,
           name: " 2 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -420,7 +420,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 3,
+          id: 31,
           name: " 3 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -452,7 +452,7 @@ const initialState = {
       subcategory: "موتور برق",
       relatedProducts: [
         {
-          id: 1,
+          id: 32,
           name: " 1 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -467,7 +467,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 2,
+          id: 33,
           name: " 2 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
@@ -482,7 +482,7 @@ const initialState = {
           link: "/اره کمانی",
         },
         {
-          id: 3,
+          id: 34,
           name: " 3 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",

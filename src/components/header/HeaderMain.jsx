@@ -10,27 +10,29 @@ export default function HeaderMain() {
     color: 'blue',
 };
 
+
+
   return (
-    <div className="grid grid-cols-4 items-center px-24 py-4 my-11 bg-box_lighten_secondry">
+    <div className="grid grid-cols-4 items-center px-24 py-4 my-11 bg-box_lighten_secondry sticky top-0 z-50">
         <div className="relative">
           <Menu />
         </div>
-        <ul className="flex col-span-2 items-center gap-5 [&>*]:flex [&>*]:gap-2">
+        <ul className="flex col-span-2 items-center gap-5 [&>*]:flex [&>*]:gap-2 ">
           <li>
             <HomeSvg />
-            <NavLink exact to='/' activeStyle={activeLinkStyle}>صفحه نخست</NavLink >
+            <NavLink exact to='/' className="font-morabba_medium" activeStyle={activeLinkStyle}>صفحه نخست</NavLink >
           </li>
           <li>
             <ArchiveSvg />
-            <NavLink  to='/blog'>مقاله</NavLink >
+            <NavLink  to='/blog' className="font-morabba_medium">مقاله</NavLink >
           </li>
           <li>
             <ShopSvg />
-            <NavLink  to='shopping'>فروشگاه</NavLink >
+            <NavLink  to='shopping' className="font-morabba_medium">فروشگاه</NavLink >
           </li>
           <li>
             <QuestionSvg />
-            <NavLink  to='questions'>سوالات متداول</NavLink >
+            <NavLink  to='questions' className="font-morabba_medium">سوالات متداول</NavLink >
           </li>
         </ul>
       <div className="justify-self-end flex gap-2 text-white bg-black px-3 py-1 rounded-lg">
