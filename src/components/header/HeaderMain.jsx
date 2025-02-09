@@ -35,26 +35,26 @@ export default function HeaderMain() {
       <div className="relative col-span-1">
         <Menu />
       </div>
-      <ul className={`lg:w-fit w-[200px] lg:static absolute ml-20 left-0 top-1 gap-6 z-40 lg:col-span-2 col-span-1 ${open ? 'h-fit' : 'h-6 lg:h-full'} lg:bg-transparent bg-primary_lighteen transition-all
-      overflow-hidden flex lg:flex-row flex-col lg:items-center [&>*]:flex lg:[&>*]:flex-row [&>*]:flex-row-reverse lg:[&>*]:gap-2 [&>*]:gap-3 lg:[&>*]:px-1 [&>*]:px-3 [&>*]:pb-3`}>
+      <ul className={` lg:w-fit w-[200px] lg:static absolute ml-20 left-0 top-1 gap-4 z-40 lg:col-span-2 col-span-1 ${open ? 'h-fit' : 'h-6 lg:h-full'} lg:bg-transparent bg-primary_lighteen transition-all
+      overflow-hidden flex lg:flex-row flex-col lg:items-center [&>*]:flex lg:[&>*]:flex-row [&>*]:flex-row-reverse lg:[&>*]:gap-2 [&>*]:gap-3 lg:[&>*]:px-1 [&>*]:px-3 group hover:[&>*]:bg-box_lighten_secondry`}>
         {
           width <= '1023' && <li className="bg-transparent hover:cursor-pointer befores" onClick={clickHandler}>
             <HamburgerSvg />
           </li>
         }
-        <li>
+        <li className="py-2">
           <HomeSvg />
           <NavLink exact to='/' className="font-morabba_medium" activeStyle={activeLinkStyle}>صفحه نخست</NavLink >
         </li>
-        <li>
+        <li className="py-2">
           <ArchiveSvg />
           <NavLink to='/blog' className="font-morabba_medium">مقاله</NavLink >
         </li>
-        <li>
+        <li className="py-2">
           <ShopSvg />
           <NavLink to='shopping' className="font-morabba_medium">فروشگاه</NavLink >
         </li>
-        <li>
+        <li className="py-2">
           <QuestionSvg />
           <NavLink to='questions' className="font-morabba_medium">سوالات متداول</NavLink >
         </li>
