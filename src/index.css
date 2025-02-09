@@ -58,6 +58,8 @@
 }
 .ant-menu-submenu-title {
   padding-right: 0;
+  height: 24px !important;
+  
 }
 
 /* Custom scrollbar styles */
@@ -94,13 +96,15 @@
 .scrollbar::-webkit-scrollbar-track {
   @apply bg-gray-200; /* Custom scrollbar track */
 }
-/* .ant-menu-submenu-title {
-  position: sticky !important;
-  top: 0 !important;
-  background-color: white;
-} */
 ul.ant-menu.ant-menu-sub.ant-menu-inline {
   max-height: 250px;
   overflow: auto;
   scrollbar-width: thin; /* For Firefox */
+}
+.befores{
+  height: 27px;
+  background-color: #F9F9F9;
+}
+:where(.css-dev-only-do-not-override-161f05s).ant-menu-inline .ant-menu-sub.ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title , :where(.css-dev-only-do-not-override-161f05s).ant-menu-inline.ant-menu-root .ant-menu-item, :where(.css-dev-only-do-not-override-161f05s).ant-menu-inline.ant-menu-root .ant-menu-submenu-title{
+  padding: 1rem;
 }

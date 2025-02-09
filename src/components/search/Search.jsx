@@ -6,7 +6,7 @@ export default function Search() {
         e.preventDefault()
     }
     return (
-        <form className="w-full mx-auto col-span-2" onSubmit={submitHandler}>
+        <form className="w-full lg:block hidden mx-auto col-span-2" onSubmit={submitHandler}>
             <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">جستجو</label>
             <div className="relative">
                 <div className="absolute inset-y-0 left-0 p-2 flex items-center ps-3 rounded-l-lg bg-primaryColor hover:cursor-pointer" type="submit">

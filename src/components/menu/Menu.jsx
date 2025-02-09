@@ -50,10 +50,10 @@ const MainMenu = () => {
           border: 'none',
           zIndex: 9999,
           borderRadius: '0.5rem',
-          // backgroundColor: isLightMode ? '#FF5023' : 'black', // رنگ پس‌زمینه  
+          backgroundColor: isLightMode ? '#F9F9F9': 'black', // رنگ پس‌زمینه  
           position: 'absolute',
-          top: '-24px',
-          right: '0'
+          top: '-16px',
+          right: '0',
         }}
         defaultOpenKeys={['']}
         selectedKeys={[current]}
@@ -61,14 +61,14 @@ const MainMenu = () => {
         items={items.map(item => ({
           ...item,
           label: (
-            <NavLink activeStyle={activeLinkStyle} className="text-black dark:text-white " > {/* رنگ متن والد */}
+            <NavLink className="text-black dark:text-white" > {/* رنگ متن والد */}
               {item.label}
             </NavLink>
           ),
           children: item.children?.map(child => ({
             ...child,
             label: (
-              <NavLink activeStyle={activeLinkStyle} > {/* رنگ متن برای زیر گزینه‌ها */}
+              <NavLink > {/* رنگ متن برای زیر گزینه‌ها */}
                 {child.label}
               </NavLink>
             )
