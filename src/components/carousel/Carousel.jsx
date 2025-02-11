@@ -21,33 +21,23 @@ export default () => {
             perView: 1,
         },
     })
-    useEffect(() => {
-        const slider = document.querySelector('.keen-slider');
-        if (slider) {
-            const currentSlideElement = slider.children[currentSlide + 1]; // Get the current slide element  
-            const currentSlideElementprev = slider.children[currentSlide]; // Get the current slide element  
-            if (currentSlideElement) {
-                currentSlideElement.style.padding = "10px";
-                currentSlideElementprev.style.border = "none";
-            }
-        }
-    }, [currentSlide]);
+
     return (
         <>
-            <div className="navigation-wrapper px-20 my-10">
+            <div className="navigation-wrapper lg:px-20 px-10 my-10">
                 <div ref={sliderRef} className="keen-slider">
                     {
                         selectionSlider.map(item => <div className="relative keen-slider__slide number-slide1" key={item.id}>
 
                             <div className="relative w-1/2 h-full bg-primaryColor rounded-2xl transform -translate-x-3 ">
-                                <div className="absolute inset-0 bg-no-repeat blur-sm -rotate-12" style={{ backgroundPosition: '35px', backgroundSize: '5rem', backgroundImage: `url("photo/${item.image}")` }} ></div>
-                                <div className="absolute inset-0 bg-no-repeat blur-[1px] rotate-12" style={{ backgroundPosition: 'right 50px top 20px ', backgroundSize: '5rem', backgroundImage: `url("photo/${item.image}")` }} ></div>
-                                <img className="object-contain size-full" src={`photo/${item.image}`} alt="" />
+                                <div className="absolute inset-0 bg-no-repeat blur-sm -rotate-12" style={{ backgroundPosition: '5px', backgroundSize: '4rem', backgroundImage: `url("photo/${item.image}")` }} ></div>
+                                <div className="absolute inset-0 bg-no-repeat blur-[1px] rotate-12" style={{ backgroundPosition: 'right 30px top 0px ', backgroundSize: '4rem', backgroundImage: `url("photo/${item.image}")` }} ></div>
+                                <img className="object-contain lg:size-full lg:mt-0 mt-20 w-40" src={`photo/${item.image}`} alt="" />
                             </div>
                             <div className="w-1/2 h-[90%] bg-black dark:bg-white rounded-2xl border-solid border-gray-100 border-8 ">
-                                <div className="w-fit h-full mx-auto my-auto flex flex-col justify-center gap-5">
-                                    <span className="w-fit text-white dark:text-black text-3xl">{item.name}</span>
-                                    <span className="w-fit text-white dark:text-black text-3xl">{item.short_description}</span>
+                                <div className="w-fit h-full px-6 mx-auto my-auto flex flex-col justify-center gap-5">
+                                    <span className="w-fit text-white dark:text-black lg:text-3xl text-sm">{item.name}</span>
+                                    <span className="w-fit text-white dark:text-black lg:text-3xl text-sm">{item.short_description}</span>
                                 </div>
                             </div>
                         </div>)

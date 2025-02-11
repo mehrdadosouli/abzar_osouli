@@ -8,7 +8,7 @@ import { selectCategory } from '../../redux/features/Products/productSlice'
 
 const MainMenu = () => {
   const [current, setCurrent] = useState('');
-  const select = useSelector(selectCategory)
+  const select = useSelector(selectCategory);
 
   const items = [
     {
@@ -32,7 +32,7 @@ const MainMenu = () => {
     color: 'blue',
   };
   const onClick = (e) => {
-    setCurrent(e.key);
+    setCurrent(e.key);    
   };
  
 
@@ -54,6 +54,7 @@ const MainMenu = () => {
           position: 'absolute',
           top: '-16px',
           right: '0',
+          userSelect:'none'
         }}
         defaultOpenKeys={['']}
         selectedKeys={[current]}

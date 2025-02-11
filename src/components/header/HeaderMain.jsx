@@ -8,7 +8,9 @@ import Menu from "../menu/Menu"
 import { NavLink } from "react-router"
 export default function HeaderMain() {
   const [open, setOpen] = useState(false)
+  const [openMenuRight, setOpenMenuRight] = useState(false)
   const [width, setWidth] = useState('')
+
   const activeLinkStyle = {
     fontWeight: 'bold',
     color: 'blue',
@@ -36,7 +38,7 @@ export default function HeaderMain() {
         <Menu />
       </div>
       <ul className={` lg:w-fit w-[200px] lg:static absolute ml-20 left-0 top-1 gap-4 z-40 lg:col-span-2 col-span-1 ${open ? 'h-fit' : 'h-6 lg:h-full'} lg:bg-transparent bg-primary_lighteen transition-all
-      overflow-hidden flex lg:flex-row flex-col lg:items-center [&>*]:flex lg:[&>*]:flex-row [&>*]:flex-row-reverse lg:[&>*]:gap-2 [&>*]:gap-3 lg:[&>*]:px-1 [&>*]:px-3 group hover:[&>*]:bg-box_lighten_secondry`}>
+      overflow-hidden flex lg:flex-row flex-col lg:items-center [&>*]:flex lg:[&>*]:flex-row [&>*]:flex-row-reverse lg:[&>*]:gap-2 [&>*]:gap-3 lg:[&>*]:px-1 [&>*]:px-3 group hover:[&>*]:bg-box_lighten_secondry [&>*]:select-none `}>
         {
           width <= '1023' && <li className="bg-transparent hover:cursor-pointer befores" onClick={clickHandler}>
             <HamburgerSvg />
@@ -65,6 +67,7 @@ export default function HeaderMain() {
         </svg>
         <span className="text-white ">همکاری در فروش</span>
       </div>
+      <div className={open ? "w-full h-screen bg-gray-300 blur-lg opacity-50 absolute top-16 bottom-0 left-0 right-0 z-30" : "hidden"} onClick={()=>setOpen(false)} ></div>
     </div>
   )
 }
