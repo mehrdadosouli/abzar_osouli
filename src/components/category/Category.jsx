@@ -13,7 +13,7 @@ export default function Category() {
   const selectCategoryItems = useSelector(selectCategory)
   const [category, setCategory] = useState('پیکور')
   const selectDiscount = useSelector(selectAmazingDiscount)
-  const relatedproducts = selectCategoryItems.find(item => item.category === category)?.relatedProducts 
+  const relatedproducts = selectCategoryItems.find(item => item.category === category)?.relatedProducts
   const changeHandlerCategory = (cat) => {
     setCategory(cat)
   }
@@ -22,23 +22,21 @@ export default function Category() {
       <div className="flex justify-between items-center">
         <CarouselCategory selectCategoryItems={selectCategoryItems} changeHandlerCategory={changeHandlerCategory} />
       </div>
-      <div className="flex gap-5 my-10 px-24">
-        <div className="relative w-1/4 bg-no-repeat bg-cover rounded-xl backdrop-brightness-0" style={{ backgroundImage: `url("photo/abzar (4).png")` }}>
+      <div className="flex lg:flex-row flex-col gap-5 my-10 md:px-24 px-10">
+        <div className="relative lg:w-1/4 w-full lg:h-auto h-96 bg-no-repeat bg-cover rounded-xl backdrop-brightness-0" style={{ backgroundImage: `url("photo/abzar (4).png")` }}>
           <h3 className="absolute right-0 -top-12 text-primaryColor font-bold text-3xl">تخفیف شگفت انگیز</h3>
-          <img className="size-3/4 object-contain object-left-bottom mt-28 mx-auto" src={`photo/${selectDiscount[0].image}`} alt="" />
+          <img className="md:size-2/4 sm:w-1/4 w-1/3 object-contain object-left-bottom md:mt-36 sm:mt-32 mt-40 mx-auto" src={`photo/${selectDiscount[0].image}`} alt="" />
           <TimerCounter initialTime={selectDiscount[0].time} />
         </div>
-        <div className="w-3/4 flex flex-col gap-5">
+        <div className="lg:w-3/4 w-full flex flex-col gap-5">
           <CarouselOneCategory arrow={true} slides='3' selectOnecategory={relatedproducts} />
           <div className="relative w-full h-52 flex items-center justify-between bg-[#5068E4] rounded-xl ">
-            <div
-              className="absolute inset-0 bg-no-repeat"
-              style={{
-                backgroundImage: `url("photo/${selectDiscount[1].image}")`,
-                backgroundPosition: '40% 2rem',
-                backgroundSize: '8rem',
-                filter: 'blur(2.5px)',
-              }}
+            <div className="absolute inset-0 bg-no-repeat" style={{
+              backgroundImage: `url("photo/${selectDiscount[1].image}")`,
+              backgroundPosition: '40% 2rem',
+              backgroundSize: '8rem',
+              filter: 'blur(2.5px)',
+            }}
             ></div>
             <div className="w-1/2 flex flex-col gap-5 mr-20 z-10">
               <span className="w-fit px-4 py-2 text-[#5068E4] md:text-lg bg-white rounded-xl">50 % تخفیف</span>
@@ -53,3 +51,6 @@ export default function Category() {
     </div >
   )
 }
+
+
+

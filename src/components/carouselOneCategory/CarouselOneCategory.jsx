@@ -10,7 +10,7 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     breakpoints: {
-      "(max-width: 400px)": {
+      "(max-width: 500px)": {
         slides: { perView: 1, spacing: 15 },
       },
       "(min-width: 700px)": {
@@ -32,8 +32,8 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
 
   return (
     <>
-      <div className="navigation-wrapper">
-        <div ref={sliderRef} className="keen-slider flex">
+      <div className="navigation-wrapper my-10 z-40">
+        <div ref={sliderRef} className="keen-slider flex ">
           {selectOnecategory?.length &&
             selectOnecategory.map((item, index) => (
               <div key={item.id} className={`keen-slider__slide w-full flex flex-col p-4 gap-4 rounded-2xl ${bg == 'light' ? "bg-box_lighten_secondry" : "bg-primaryColor"}`}>

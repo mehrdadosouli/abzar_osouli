@@ -20,7 +20,7 @@ export default ({ selectCategoryItems , changeHandlerCategory}) => {
           <div className="lg:size-36 md:size-28 size-20 shadow-[0px_0px_10px_5px_#0000000F] rounded-2xl overflow-hidden my-10" key={item.id}>
             <CategoryItems item={item} />
           </div>
-          <div className="lg:text-3xl text-lg dark:text-white">{item.category}</div>
+          <div className="lg:text-2xl text-lg dark:text-white">{item.category}</div>
         </div>
         ))
       }
