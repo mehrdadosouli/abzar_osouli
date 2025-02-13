@@ -26,7 +26,7 @@ function FooterMain() {
                     <img src="/photo/zarinpall.png" alt="" />
                     <img src="/photo/enamad.png" alt="" />
                 </div>
-                <div className='flex gap-4'>
+                <div className='flex flex-wrap gap-4'>
                     <img src="/photo/Group 69.png" alt="" />
                     <img src="/photo/Group 70.png" alt="" />
                     <img src="/photo/Group 71.png" alt="" />
