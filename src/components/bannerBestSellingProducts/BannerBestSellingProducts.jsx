@@ -11,19 +11,19 @@ function BannerBestSellingProducts({ selectCategoryItems }) {
                         مشاهده همه محصولات  
                     </Link>  
                 </div>  
-                <div className='w-full min-h-[32rem] md:w-2/3 relative md:-translate-y-16'>  
+                <div className='w-full md:min-h-[32rem] md:w-2/3 relative md:-translate-y-16'>  
                     <div  
-                        className='size-full bg-contain bg-no-repeat'  
+                        className='size-full bg-contain bg-no-repeat md:block hidden'
                         style={{  
                             backgroundPositionY: '-5vw',  
-                            backgroundSize: '80%',  
+                            backgroundSize: '45vw',  
                             backgroundImage: "url('photo/abzar (16).png')",  
-                            zIndex: 1 // Adjust layering  
+                            zIndex: 1 
                         }}  
                     ></div>  
                 </div>  
             </div>  
-            <div className='mt-5'> {/* Optional spacing below the image */}  
+            <div className='mt-5'>
                 <CarouselOneCategory bg='light' arrow={false} slides='4' selectOnecategory={selectCategoryItems} />  
             </div>  
         </div>  

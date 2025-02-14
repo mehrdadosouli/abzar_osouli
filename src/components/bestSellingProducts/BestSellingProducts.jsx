@@ -7,7 +7,7 @@ function BestSellingProducts() {
     const selectCategoryItems = useSelector(selectCategory)
     
   return (
-    <div className='flex flex-col gap-10 px-24 '>
+    <div className='flex flex-col gap-10 md:px-24 px-12 '>
         <div className='flex justify-between items-center text-primaryColor font-bold'>
             <Link to="/">پرفروش ترین محصولات</Link >
             <span>مشاهده همه</span>

@@ -32,7 +32,7 @@ export default () => {
                             <div className="relative w-1/2 h-full bg-primaryColor rounded-2xl transform -translate-x-3 ">
                                 <div className="absolute inset-0 bg-no-repeat blur-sm -rotate-12" style={{ backgroundPosition: '5px', backgroundSize: '4rem', backgroundImage: `url("photo/${item.image}")` }} ></div>
                                 <div className="absolute inset-0 bg-no-repeat blur-[1px] rotate-12" style={{ backgroundPosition: 'right 30px top 0px ', backgroundSize: '4rem', backgroundImage: `url("photo/${item.image}")` }} ></div>
-                                <img className="object-contain lg:size-full lg:mt-0 mt-20 w-40" src={`photo/${item.image}`} alt="" />
+                                <img className="object-contain lg:size-full lg:mt-0 size-[25vw] lg:mr-0 mr-10 mt-20 " src={`photo/${item.image}`} alt="" />
                             </div>
                             <div className="w-1/2 h-[90%] bg-black dark:bg-white rounded-2xl border-solid border-gray-100 border-8 ">
                                 <div className="w-fit h-full px-6 mx-auto my-auto flex flex-col justify-center gap-5">
