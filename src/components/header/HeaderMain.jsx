@@ -37,7 +37,7 @@ export default function HeaderMain() {
       <div className="relative md:col-span-1 col-span-2 ">
         <Menu />
       </div>
-      <ul className={` lg:w-fit w-[400px] lg:static absolute lg:ml-0 ml-10 left-0 top-1 gap-4 z-40 lg:col-span-2 md:col-span-1 col-span-2 ${open ? 'h-fit' : 'h-6 lg:h-full'} lg:bg-transparent bg-primary_lighteen transition-all
+      <ul className={` lg:w-fit w-[400px] lg:static absolute lg:ml-0 ml-6 left-0 top-1 gap-3 z-40 lg:col-span-2 md:col-span-1 col-span-2 ${open ? 'h-fit' : 'h-6 lg:h-full'} lg:bg-transparent bg-primary_lighteen transition-all
       overflow-hidden flex lg:flex-row flex-col lg:items-center [&>*]:flex lg:[&>*]:flex-row [&>*]:flex-row-reverse lg:[&>*]:gap-2 [&>*]:gap-3 lg:[&>*]:px-1 [&>*]:px-3 group hover:[&>*]:bg-box_lighten_secondry [&>*]:select-none `}>
         {
           width <= '1023' && <li className="bg-transparent hover:cursor-pointer befores" onClick={clickHandler}>

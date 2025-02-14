@@ -41,20 +41,20 @@ const MainMenu = () => {
   return (
     <>
       <Menu
-        theme={isLightMode ? 'light' : 'dark'}
+        // theme={isLightMode ? 'light' : 'dark'}
         onClick={onClick}
         style={{
-          width: 256,
+          width: 210,
           maxHeight: 300,
           overflowY: 'auto',
           border: 'none',
           zIndex: 9999,
           borderRadius: '0.5rem',
-          backgroundColor: isLightMode ? '#F9F9F9': 'black', // رنگ پس‌زمینه  
+          backgroundColor: '#F9F9F9', // رنگ پس‌زمینه  
           position: 'absolute',
           top: '-16px',
           right: '0',
-          userSelect:'none'
+          userSelect:'none',
         }}
         defaultOpenKeys={['']}
         selectedKeys={[current]}
@@ -62,7 +62,7 @@ const MainMenu = () => {
         items={items.map(item => ({
           ...item,
           label: (
-            <NavLink className="text-black dark:text-white" > {/* رنگ متن والد */}
+            <NavLink className="text-black" > {/* رنگ متن والد */}
               {item.label}
             </NavLink>
           ),
