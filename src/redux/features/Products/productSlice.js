@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  products: [
+  allproducts: [
     {
       id: 1,
       name: "دریل چکشی رونیکس",
@@ -30,6 +30,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 12,
@@ -45,6 +46,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 13,
@@ -60,6 +62,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/دریل",
@@ -92,6 +95,7 @@ const initialState = {
           categoryIcon: "abzar (17).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 15,
@@ -107,8 +111,8 @@ const initialState = {
           categoryIcon: "abzar (18).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
-        }
-        ,
+          count: 0,
+        },
         {
           id: 16,
           name: "3 مینی فرز ادون",
@@ -123,6 +127,7 @@ const initialState = {
           categoryIcon: "abzar (19).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/مینی فرز",
@@ -155,6 +160,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 18,
@@ -170,6 +176,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 19,
@@ -185,6 +192,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/اره کمانی",
@@ -217,6 +225,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 21,
@@ -232,6 +241,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 22,
@@ -247,6 +257,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/سنگ فرز",
@@ -279,6 +290,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 24,
@@ -294,6 +306,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 25,
@@ -309,6 +322,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/پیکور",
@@ -341,6 +355,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 27,
@@ -356,6 +371,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 28,
@@ -371,6 +387,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/اره گرد بر",
@@ -403,6 +420,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 30,
@@ -418,6 +436,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 31,
@@ -433,6 +452,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/کارواش اینتیمکث",
@@ -465,6 +485,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 33,
@@ -480,6 +501,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
         {
           id: 34,
@@ -495,6 +517,7 @@ const initialState = {
           categoryIcon: "abzar (25).png",
           subcategory: "اره کمانی",
           link: "/اره کمانی",
+          count: 0,
         },
       ],
       link: "/موتور برق",
@@ -549,8 +572,7 @@ const initialState = {
       categoryIcon: "abzar(28).png",
       subcategory: "دریل",
       link: "/دریل",
-    }
-    ,
+    },
     {
       id: 2,
       name: "دریل چکشی رونیکس",
@@ -574,24 +596,52 @@ export const productSlice = createSlice({
   name: "products",
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    increment: (state, action) => {
+      state.allproducts.map((item) =>
+        item.relatedProducts.map((elem) => {
+          if (elem.id == action.payload) {
+            if (elem.count != -1) {
+              elem.count += 1;
+            }
+          }
+        })
+      );
     },
-    decrement: (state) => {
-      state.value -= 1;
+    decrement: (state, action) => {
+      state.allproducts.map((item) =>
+        item.relatedProducts.map((elem) => {
+          if (elem.id == action.payload) {
+            if (elem.count != -1) {
+              elem.count -= 1;
+            }
+            if (elem.count == 0) {
+              state.sumCountity -= 1;
+            }
+          }
+        })
+      );
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
+    addToCard: (state, action) => {
+      state.allproducts.map((elem) =>
+        elem.relatedProducts.map((item) => {
+          if (item.id === action.payload) {
+            if (item.count == 0) {
+              state.sumCountity += 1;
+            }
+            item.count += 1;
+          }
+        })
+      );
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = productSlice.actions;
+export const { increment, decrement, addToCard } = productSlice.actions;
 
 export default productSlice.reducer;
 
-export const selectCategory = (store) => store.products.products;
+export const selectCategory = (store) => store.products.allproducts;
 export const selectAmazingDiscount = (store) => store.products.amazingDiscount;
 export const selectSliderHomePage = (store) => store.products.sliderHomePage;
-
+export const selectSumCountity = (store) => store.products.sumCountity;

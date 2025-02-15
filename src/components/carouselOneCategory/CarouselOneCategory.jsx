@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import "./carouselOneCategory.css";
 import { useKeenSlider } from "keen-slider/react";
+import { addToCard, decrement, increment } from "../../redux/features/Products/productSlice";
+import { useDispatch } from "react-redux";
+import TrashIcon from "../../../public/photo/TrashIcon";
+import PlusSvg from "../../../public/photo/PlusSvg";
+import MinusSvg from "../../../public/photo/MinusSvg";
+
 
 export default function CarouselOneCategory({ selectOnecategory, arrow, slides, bg }) {
-
+  const dispatch=useDispatch()  
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -28,7 +34,18 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
       setLoaded(true)
     },
   })
-
+  const clickHandler=(id)=>{
+    dispatch(addToCard(id))  
+  }
+  const trashHandler=(id)=>{
+    dispatch(decrement(id))  
+  }
+  const plusHandler=(id)=>{
+    dispatch(increment(id))  
+  }
+  const minusHandler=(id)=>{
+    dispatch(decrement(id))  
+  }
 
   return (
     <>
@@ -46,7 +63,12 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
                   <span>قیمت :</span>
                   <span>{item.price}</span>
                 </div>
-                <button className={`p-2 ${bg == 'light' ? "bg-primaryColor" : "bg-primary_glass "} rounded-lg text-white`}>افزودن به سبد خرید</button>
+                <div className={`p-2 ${bg == 'light' ? "bg-primaryColor" : "bg-primary_glass "} rounded-lg text-white`}> {item.count == 0 ? <button className="w-full" onClick={()=>clickHandler(item.id)}>افزودن به سبد خرید</button> : <div className="flex justify-between items-center">
+                  <span className="cursor-pointer" onClick={()=>plusHandler(item.id)}><PlusSvg /></span>
+                  {
+                    item.count > 1 ? <span className="cursor-pointer" onClick={()=>minusHandler(item.id)}><MinusSvg /></span> : <span className="cursor-pointer" onClick={()=>trashHandler(item.id)}><TrashIcon /></span>
+                  }
+                </div> }</div>
               </div>
             ))
           }
