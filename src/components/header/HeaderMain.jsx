@@ -67,7 +67,7 @@ export default function HeaderMain() {
         </svg>
         <span className="text-white ">همکاری در فروش</span>
       </div>
-      <div className={open ? "w-full h-screen bg-gray-300 blur-lg opacity-50 absolute top-16 bottom-0 left-0 right-0 z-30" : "hidden"} onClick={()=>setOpen(false)} ></div>
+      <div className={open ? "w-full h-screen bg-gray-300 blur-lg opacity-50 absolute top-16 bottom-0 left-0 right-0 z-30" : "hidden"} onClick={() => setOpen(false)} ></div>
     </div>
   )
 }

@@ -4,7 +4,7 @@ const initialState = {
   allproducts: [
     {
       id: 1,
-      name: "دریل چکشی رونیکس",
+      name: "سسسدریل چکشی رونیکس",
       model: "Ronix Rotary Drill",
       image: "abzar (1).png",
       short_description: "یک دریل چکشی قدرتمند با کارایی بالا.",
@@ -36,7 +36,7 @@ const initialState = {
           id: 12,
           name: " 2 اره کمانی",
           model: "Bow Saw",
-          image: "abzar (1).png",
+          image: "abzar (2).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
@@ -52,7 +52,7 @@ const initialState = {
           id: 13,
           name: " 3 اره کمانی",
           model: "Bow Saw",
-          image: "abzar (1).png",
+          image: "abzar (3).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
@@ -213,7 +213,7 @@ const initialState = {
       relatedProducts: [
         {
           id: 20,
-          name: " 1 اره کمانی",
+          name: " 20 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -229,7 +229,7 @@ const initialState = {
         },
         {
           id: 21,
-          name: " 2 اره کمانی",
+          name: " 21 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -245,7 +245,7 @@ const initialState = {
         },
         {
           id: 22,
-          name: " 3 اره کمانی",
+          name: " 22 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -278,7 +278,7 @@ const initialState = {
       relatedProducts: [
         {
           id: 23,
-          name: " 1 اره کمانی",
+          name: " 23 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -294,7 +294,7 @@ const initialState = {
         },
         {
           id: 24,
-          name: " 2 اره کمانی",
+          name: " 24 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -310,7 +310,7 @@ const initialState = {
         },
         {
           id: 25,
-          name: " 3 اره کمانی",
+          name: " 25 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -343,7 +343,7 @@ const initialState = {
       relatedProducts: [
         {
           id: 26,
-          name: " 1 اره کمانی",
+          name: " 26 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -359,7 +359,7 @@ const initialState = {
         },
         {
           id: 27,
-          name: " 2 اره کمانی",
+          name: " 27 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -375,7 +375,7 @@ const initialState = {
         },
         {
           id: 28,
-          name: " 3 اره کمانی",
+          name: " 28 اره کمانی",
           model: "Bow Saw",
           image: "abzar (1).png",
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
@@ -590,6 +590,7 @@ const initialState = {
     },
   ],
   sumCountity: 0,
+  checkout: 0,
 };
 
 export const productSlice = createSlice({
@@ -602,6 +603,7 @@ export const productSlice = createSlice({
           if (elem.id == action.payload) {
             if (elem.count != -1) {
               elem.count += 1;
+              state.checkout += elem.count * elem.price;
             }
           }
         })
@@ -613,6 +615,7 @@ export const productSlice = createSlice({
           if (elem.id == action.payload) {
             if (elem.count != -1) {
               elem.count -= 1;
+              state.checkout -= elem.count * elem.price;
             }
             if (elem.count == 0) {
               state.sumCountity -= 1;
@@ -629,6 +632,7 @@ export const productSlice = createSlice({
               state.sumCountity += 1;
             }
             item.count += 1;
+            state.checkout += item.price;
           }
         })
       );
@@ -636,12 +640,15 @@ export const productSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { increment, decrement, addToCard } = productSlice.actions;
 
 export default productSlice.reducer;
 
 export const selectCategory = (store) => store.products.allproducts;
+export const selectAllProductsCategory = (store) => {  
+  return store.products.allproducts.flatMap(item => item?.relatedProducts);  
+};
 export const selectAmazingDiscount = (store) => store.products.amazingDiscount;
 export const selectSliderHomePage = (store) => store.products.sliderHomePage;
 export const selectSumCountity = (store) => store.products.sumCountity;
+export const selectCheckout = (store) => store.products.checkout;

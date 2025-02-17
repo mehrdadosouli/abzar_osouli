@@ -63,7 +63,9 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
                   <span>قیمت :</span>
                   <span>{item.price}</span>
                 </div>
-                <div className={`p-2 ${bg == 'light' ? "bg-primaryColor" : "bg-primary_glass "} rounded-lg text-white`}> {item.count == 0 ? <button className="w-full" onClick={()=>clickHandler(item.id)}>افزودن به سبد خرید</button> : <div className="flex justify-between items-center">
+                <div className={`p-2 ${bg == 'light' ? "bg-primaryColor" : "bg-primary_glass "} rounded-lg text-white`}>
+                   {item.count == 0 ? <button className="w-full" onClick={()=>clickHandler(item.id)}>افزودن به سبد خرید</button> : 
+                <div className="flex justify-between items-center">
                   <span className="cursor-pointer" onClick={()=>plusHandler(item.id)}><PlusSvg /></span>
                   {
                     item.count > 1 ? <span className="cursor-pointer" onClick={()=>minusHandler(item.id)}><MinusSvg /></span> : <span className="cursor-pointer" onClick={()=>trashHandler(item.id)}><TrashIcon /></span>
