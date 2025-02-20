@@ -24,7 +24,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 782000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -105,7 +105,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 799333,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (18).png",
@@ -121,7 +121,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 885500,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (19).png",
@@ -140,7 +140,7 @@ const initialState = {
       short_description: "اره کمانی با تیغه تیز و مقاوم.",
       long_description:
         "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-      price: 700000,
+      price: 7,
       quantity: 0,
       category: "اره کمانی",
       categoryIcon: "abzar (25).png",
@@ -154,7 +154,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 968000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -170,7 +170,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 722000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -186,7 +186,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 7475300,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -219,7 +219,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 796600,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -235,7 +235,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 796000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -251,7 +251,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 125888,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -284,7 +284,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 7330000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -300,7 +300,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 148000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -316,7 +316,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 7330000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -349,7 +349,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 478000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -365,7 +365,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 732000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -381,7 +381,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 7,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -414,7 +414,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 7,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -430,7 +430,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 7,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -446,7 +446,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 666000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -479,7 +479,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 70000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -495,7 +495,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 550000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -511,7 +511,7 @@ const initialState = {
           short_description: "اره کمانی با تیغه تیز و مقاوم.",
           long_description:
             "این اره کمانی مناسب برای برش چوب و مواد غیر فلزی است. تیغه تیز آن کار را آسان می‌کند.",
-          price: 700000,
+          price: 658000,
           quantity: 0,
           category: "اره کمانی",
           categoryIcon: "abzar (25).png",
@@ -597,17 +597,15 @@ export const productSlice = createSlice({
   name: "products",
   initialState,
   reducers: {
-    increment: (state, action) => {
-      state.allproducts.map((item) =>
-        item.relatedProducts.map((elem) => {
-          if (elem.id == action.payload) {
-            if (elem.count != -1) {
-              elem.count += 1;
-              state.checkout += elem.count * elem.price;
-            }
-          }
-        })
-      );
+    increment: (state, action) => {  
+      state.allproducts.forEach(item =>   
+        item.relatedProducts.forEach(elem => {  
+          if (elem.id === action.payload && elem.count !== -1) {  
+            state.checkout += (elem.price); 
+            elem.count += 1; 
+          }  
+        })  
+      );  
     },
     decrement: (state, action) => {
       state.allproducts.map((item) =>
@@ -615,7 +613,7 @@ export const productSlice = createSlice({
           if (elem.id == action.payload) {
             if (elem.count != -1) {
               elem.count -= 1;
-              state.checkout -= elem.count * elem.price;
+              state.checkout -= elem.price;
             }
             if (elem.count == 0) {
               state.sumCountity -= 1;
@@ -630,9 +628,10 @@ export const productSlice = createSlice({
           if (item.id === action.payload) {
             if (item.count == 0) {
               state.sumCountity += 1;
+              item.count += 1;
+              state.checkout += item.price ;
+              console.log( state.checkout);
             }
-            item.count += 1;
-            state.checkout += item.price;
           }
         })
       );
@@ -652,3 +651,9 @@ export const selectAmazingDiscount = (store) => store.products.amazingDiscount;
 export const selectSliderHomePage = (store) => store.products.sliderHomePage;
 export const selectSumCountity = (store) => store.products.sumCountity;
 export const selectCheckout = (store) => store.products.checkout;
+
+
+
+
+
+

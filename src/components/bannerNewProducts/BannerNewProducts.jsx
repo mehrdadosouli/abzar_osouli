@@ -1,11 +1,11 @@
 import CarouselOneCategory from "../carouselOneCategory/CarouselOneCategory"
-import { selectCategory } from '../../redux/features/Products/productSlice'
+import { selectAllProductsCategory } from '../../redux/features/Products/productSlice'
 import { useSelector } from "react-redux"
 import { Link } from "react-router"
 
 
 function BannerNewProducts() {
-    const selectCategoryItems = useSelector(selectCategory)
+    const selectCategoryItems = useSelector(selectAllProductsCategory)
     return (
         <div className="flex lg:flex-row flex-col gap-5 ">
             <div className="lg:w-1/5 w-full h-60 lg:h-auto lg:block flex lg:justify-start justify-center bg-[#FF9A2a] rounded-lg z-30">
