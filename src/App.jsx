@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <HeaderTop getTheme={getTheme} setGetTheme={setGetTheme}/>
-      <HeaderMain />
+      <HeaderMain getTheme={getTheme} setGetTheme={setGetTheme}/>
       <Routers />
       <Footer />
     </div>
