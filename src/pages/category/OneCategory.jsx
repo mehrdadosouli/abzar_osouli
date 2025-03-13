@@ -12,7 +12,7 @@ function OneCategory() {
     console.log(findCategory);
     
     return (
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:px-24 my-20'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:px-24 px-12 my-20'>
             <Product selectOnecategory={findCategory.relatedProducts} />
         </div>
     )

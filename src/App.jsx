@@ -15,7 +15,7 @@ function App() {
     loadTheme()
   }, []);
   return (
-    <div>
+    <div className='overflow-hidden'>
       <HeaderTop getTheme={getTheme} setGetTheme={setGetTheme}/>
       <HeaderMain getTheme={getTheme} setGetTheme={setGetTheme}/>
       <Routers />

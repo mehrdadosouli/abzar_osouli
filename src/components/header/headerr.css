@@ -1,0 +1,17 @@
+.menu {  
+    position: absolute;  
+    top: 100%; 
+    left: -100%;
+    width: 70%; 
+    max-height: 35vh; 
+    background-color: #f0f0f0;
+    transition: left 0.3s ease; 
+    z-index: 10; 
+    overflow: auto;
+    padding: 2rem;
+  }  
+  
+  .menu.open {  
+    left: 0;  
+  }
+ 
