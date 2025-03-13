@@ -10,12 +10,7 @@ import { NavLink } from "react-router"
 
 export default function HeaderMain({ setGetTheme , getTheme }) {
   const [open, setOpen] = useState(false)
-  const [open2, setOpen2] = useState(false)
-  const [openMenuRight, setOpenMenuRight] = useState(false)
   const [width, setWidth] = useState('')
-  const shopHandler = () => {
-    setOpen2(!open)
-  }
   const activeLinkStyle = {
     fontWeight: 'bold',
     color: 'blue',
@@ -26,7 +21,7 @@ export default function HeaderMain({ setGetTheme , getTheme }) {
     }
     window.addEventListener('resize', handleResize);
     return () => {
-      window.addEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleResize);
     }
   }, [window.innerWidth])
   useEffect(() => {
@@ -42,7 +37,7 @@ export default function HeaderMain({ setGetTheme , getTheme }) {
       <div className="relative md:col-span-1 col-span-2">
         <Menu />
       </div>
-      <ul className={` lg:w-fit w-[40vw] lg:static absolute lg:ml-0 ml-6 left-0 ap-3 z-40 lg:col-span-2 md:col-span-1 col-span-1 ${open ? 'h-fit' : 'h-6 lg:h-full'} lg:bg-transparent bg-primary_lighteen transition-all
+      <ul className={` lg:w-fit w-[40vw] lg:static absolute lg:ml-0 ml-6 left-0 ap-3 z-40 lg:col-span-2 md:col-span-1 col-span-1 ${open ? 'h-fit z-[999999999] top-7' : 'h-6 lg:h-full'} lg:bg-transparent bg-primary_lighteen transition-all
       overflow-hidden flex lg:flex-row flex-col lg:items-center [&>*]:flex lg:[&>*]:flex-row [&>*]:flex-row-reverse lg:[&>*]:gap-2 [&>*]:gap-3 lg:[&>*]:px-1 [&>*]:px-3 group hover:[&>*]:bg-box_lighten_secondry [&>*]:select-none `}>
         {
           width <= '1023' && <li className="bg-transparent hover:cursor-pointer befores" onClick={clickHandler}>
@@ -59,7 +54,7 @@ export default function HeaderMain({ setGetTheme , getTheme }) {
         </li>
         <li className="py-2">
           <ShopSvg />
-          <NavLink to='shopping' className="font-morabba_medium">فروشگاه</NavLink >
+          <NavLink to='category' className="font-morabba_medium">فروشگاه</NavLink >
         </li>
         <li className="py-2">
           <QuestionSvg />
