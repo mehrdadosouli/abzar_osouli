@@ -46,7 +46,7 @@ export default function HeaderMain({ setGetTheme, getTheme }) {
             <HamburgerSvg />
           </li>
       </div>
-    <ul className={`${width < '1102' ? "menu " : " flex justify-start items-center col-span-2 gap-4 mr-1"} ${open ? 'open' : ''} [&>*]:flex [&>*]:flex-row [&>*]:gap-3 [&>*]:justify-start`}>
+    <ul className={`${width < '1102' ? "absolute top-full left-0 transition-all flex flex-col gap-5 w-2/3 h-screen p-10 bg-slate-100" : " flex justify-start items-center col-span-2 gap-4 mr-1"} ${open ? 'translate-x-0 opacity-100' : ' -translate-x-full opacity-0'} [&>*]:flex [&>*]:flex-row [&>*]:gap-3 [&>*]:justify-start`}>
         <li className="">
           <HomeSvg />
           <NavLink exact to='/' className="font-morabba_medium" activeStyle={activeLinkStyle}>صفحه نخست</NavLink >
