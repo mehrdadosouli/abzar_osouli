@@ -3,7 +3,7 @@ import "keen-slider/keen-slider.min.css"
 import CategoryItems from '../category/CategoryItems'
 
 
-export default ({ selectCategoryItems , changeHandlerCategory}) => {
+export default function CarouselCategory ({ selectCategoryItems , changeHandlerCategory}) {
   
 
   const [sliderRef] = useKeenSlider({
