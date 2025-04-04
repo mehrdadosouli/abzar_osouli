@@ -29,7 +29,7 @@ export default function Category() {
           <TimerCounter initialTime={selectDiscount[0].time} />
         </div>
         <div className="lg:w-3/4 w-full flex flex-col gap-5">
-          <CarouselOneCategory arrow={true} slides='3' selectOnecategory={relatedproducts} />
+          <CarouselOneCategory bg='dark' arrow={true} slides='3' selectOnecategory={relatedproducts} />
           <div className="relative w-full h-52 flex items-center justify-between bg-[#5068E4] rounded-xl ">
             <div className="absolute inset-0 bg-no-repeat" style={{
               backgroundImage: `url("photo/${selectDiscount[1].image}")`,
