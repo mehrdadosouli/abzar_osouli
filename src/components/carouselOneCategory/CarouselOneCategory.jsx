@@ -1,10 +1,10 @@
-import { useState , useEffect } from "react";
+import { useEffect, useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import "./carouselOneCategory.css";
 import { useKeenSlider } from "keen-slider/react";
 import Product from "../Product/Product";
 
-export default function CarouselOneCategory({ selectOnecategory, arrow, slides, bg }) {
+export default function CarouselOneCategory({ bg,selectOnecategory, arrow }) {
 
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)
@@ -18,7 +18,7 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
         slides: { perView: 2, spacing: 15 },
       },
       "(min-width: 1000px)": {
-        slides: { perView: slides, spacing: 15 },
+        slides: { perView: 3, spacing: 15 },
       },
     },
     initial: 0,
@@ -29,6 +29,7 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
       setLoaded(true)
     },
   })
+
   useEffect(() => {
     instanceRef?.current?.update({
       loop: true,
@@ -52,7 +53,6 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
       },
     });
   }, [selectOnecategory]);
-  
   return (
     <>
       <div className="navigation-wrapper my-10 z-40">
@@ -82,24 +82,6 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
           </>
         )}
       </div>
-
-      {/* {loaded && instanceRef.current && (
-        <div className="dots">
-          {[
-            ...Array(instanceRef.current.track.details.slides.length).keys(),
-          ].map((idx) => {
-            return (
-              <button
-                key={idx}
-                onClick={() => {
-                  instanceRef.current?.moveToIdx(idx)
-                }}
-                className={"dot" + (currentSlide === idx ? " active" : "")}
-              ></button>
-            )
-          })}
-        </div>
-      )} */}
     </>
   )
 }
@@ -123,4 +105,3 @@ function Arrow(props) {
     </svg>
   )
 }
-
