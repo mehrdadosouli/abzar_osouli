@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import "keen-slider/keen-slider.min.css";
 import "./carouselOneCategory.css";
 import { useKeenSlider } from "keen-slider/react";
@@ -29,13 +29,35 @@ export default function CarouselOneCategory({ selectOnecategory, arrow, slides, 
       setLoaded(true)
     },
   })
-
+  useEffect(() => {
+    instanceRef?.current?.update({
+      loop: true,
+      breakpoints: {
+        "(max-width: 500px)": {
+          slides: { perView: 1, spacing: 15 },
+        },
+        "(min-width: 700px)": {
+          slides: { perView: 2, spacing: 15 },
+        },
+        "(min-width: 1000px)": {
+          slides: { perView: 3, spacing: 15 },
+        },
+      },
+      initial: 0,
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel)
+      },
+      created() {
+        setLoaded(true)
+      },
+    });
+  }, [selectOnecategory]);
   
   return (
     <>
       <div className="navigation-wrapper my-10 z-40">
         <div ref={sliderRef} className="keen-slider">
-          <Product selectOnecategory={selectOnecategory} bg='light' />
+          <Product selectOnecategory={selectOnecategory} bg={bg} />
         </div>
 
         {arrow && instanceRef.current && (
