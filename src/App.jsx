@@ -1,7 +1,7 @@
 import AOS from 'aos';
 import { useEffect, useState } from 'react';
 import { loadTheme } from './utils/theme';
-import Routers from './routes/Route.jsx';
+import Routers from './routes/Routers.jsx';
 import HeaderTop from './components/header/HeaderTop.jsx';
 import HeaderMain from './components/header/HeaderMain.jsx';
 import Footer from './components/footer/Footer.jsx';
