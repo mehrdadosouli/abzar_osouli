@@ -46,9 +46,9 @@ const MainMenu = () => {
           zIndex: 9999,
           borderRadius: '0.5rem',
           backgroundColor: '#F9F9F9', 
-          position: 'absolute',
-          top: '-16px',
-          right: '0',
+          // position: 'absolute',
+          // top: '-16px',
+          // right: '0',
           userSelect:'none',
         }}
         defaultOpenKeys={['']}

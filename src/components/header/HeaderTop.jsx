@@ -8,10 +8,10 @@ import { Link } from "react-router";
 export default function HeaderTop({ setGetTheme, getTheme }) {
 
   return (
-    <div className="grid grid-cols-5 items-center md:px-24 px-12 py-10 gap-5">
-      <h1 className="md:col-span-2 lg:col-span-1 md:block hidden text-xl mt-2 text-primaryColor dark:text-white font-bold">MEHRDAD ABZAR</h1>
+    <div className="flex justify-between items-center md:px-24 px-12 py-10 gap-5">
+      <h1 className="flex text-xl mt-2 text-primaryColor dark:text-white font-bold">MEHRDAD ABZAR</h1>
       <Search />
-      <div className="flex md:justify-end justify-between items-center gap-2 lg:col-span-2 md:col-span-3 col-span-5">
+      <div className="flex md:justify-end justify-between items-center gap-2 ">
         <div className="flex gap-2 md:justify-center items-center dark:text-white text-black hover:cursor-pointer select-none" onClick={() => { theme(); setGetTheme(localStorage.getItem('theme')) }}>
           {
             getTheme == 'light' ? 'تم تیره' : 'تم روشن'
