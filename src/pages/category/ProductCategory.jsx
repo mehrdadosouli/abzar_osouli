@@ -68,7 +68,7 @@ function ProductCategory({ bg = 'light' }) {
   )
 
   return (
-    <div className='grid md:grid-cols-2 grid-cols-1 md:px-24 px-12 my-20 gap-10'>
+    <div className='grid md:grid-cols-2 grid-cols-1 md:px-24 px-5 my-20 gap-10'>
       <div className='rounded-lg overflow-hidden'>
         <div ref={sliderRef} className="keen-slider">
           {findProduct?.galery.map(item=><div key={item.id} className="keen-slider__slide number-slide"><img src={`/photo/${item}`} /></div>)}

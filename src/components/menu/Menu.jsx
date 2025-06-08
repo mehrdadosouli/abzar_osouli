@@ -66,7 +66,6 @@ const MainMenu = () => {
           backgroundColor: '#F9F9F9',
           position: 'absolute',
           top: '20px',
-          right: '0',
           userSelect: 'none',
         }}
         defaultOpenKeys={['']}

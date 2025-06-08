@@ -20,7 +20,7 @@ export default function Category() {
   return (
     <div className="flex flex-col gap-20">
       <div className="flex justify-between items-center">
-        <CarouselCategory selectCategoryItems={selectCategoryItems} changeHandlerCategory={changeHandlerCategory} />
+        <CarouselCategory selectCategoryItems={selectCategoryItems} categoryselect={category} changeHandlerCategory={changeHandlerCategory} />
       </div>
       <div className="flex lg:flex-row flex-col gap-5 my-10 md:px-24 px-10">
         <div className="relative lg:w-1/4 w-full lg:h-auto h-96 bg-no-repeat bg-cover rounded-xl backdrop-brightness-0" style={{ backgroundImage: `url("photo/abzar (4).png")` }}>

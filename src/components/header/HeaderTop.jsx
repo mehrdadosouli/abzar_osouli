@@ -8,7 +8,7 @@ import { Link } from "react-router";
 export default function HeaderTop({ setGetTheme, getTheme }) {
 
   return (
-    <div className="flex justify-between items-center md:px-24 px-12 py-10 gap-5">
+    <div className="flex justify-between items-center md:px-24 px-5 py-10 gap-5">
       <Link to="/" className="flex text-lg mt-2 text-primaryColor dark:text-white font-bold">MEHRDAD</Link>
       <Search />
       <div className="flex md:justify-end justify-between items-center gap-5">

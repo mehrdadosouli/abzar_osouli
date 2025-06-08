@@ -21,7 +21,7 @@ export default function HeaderMain({ setGetTheme, getTheme }) {
   }
 
   return (
-    <div className="flex justify-between items-center md:px-24 px-12 bg-box_lighten_secondry sticky top-0 z-50 py-5">
+    <div className="flex justify-between items-center md:px-24 px-5 bg-box_lighten_secondry sticky top-0 z-50 py-5">
         <Menu />
       {/* Navigation desktop */}
       <ul className="hidden lg:flex gap-3">
