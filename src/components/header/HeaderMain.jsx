@@ -77,7 +77,7 @@ export default function HeaderMain({ setGetTheme, getTheme }) {
       </div>
 
       {/* موبایل: سبد خرید و دکمه منو */}
-      <div className="flex items-center gap-4 lg:hidden">
+      <div className="w-full flex justify-end items-center gap-4 lg:hidden">
         <div className="md:hidden flex">
           <Basket setGetTheme={setGetTheme} getTheme={getTheme} />
         </div>

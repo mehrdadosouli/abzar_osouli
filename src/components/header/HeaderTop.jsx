@@ -9,9 +9,9 @@ export default function HeaderTop({ setGetTheme, getTheme }) {
 
   return (
     <div className="flex justify-between items-center md:px-24 px-12 py-10 gap-5">
-      <h1 className="flex text-xl mt-2 text-primaryColor dark:text-white font-bold">MEHRDAD ABZAR</h1>
+      <Link to="/" className="flex text-lg mt-2 text-primaryColor dark:text-white font-bold">MEHRDAD</Link>
       <Search />
-      <div className="flex md:justify-end justify-between items-center gap-2 ">
+      <div className="flex md:justify-end justify-between items-center gap-5">
         <div className="flex gap-2 md:justify-center items-center dark:text-white text-black hover:cursor-pointer select-none" onClick={() => { theme(); setGetTheme(localStorage.getItem('theme')) }}>
           {
             getTheme == 'light' ? 'تم تیره' : 'تم روشن'
